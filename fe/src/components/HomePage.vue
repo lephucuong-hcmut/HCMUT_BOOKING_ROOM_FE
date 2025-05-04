@@ -114,6 +114,8 @@
 <script>
 import AppSidebar from './AppSidebar.vue'
 import axios from 'axios';
+import { checkAuth } from '@/utils/auth';
+
 
 export default {
   name: 'HomePage',
@@ -139,7 +141,9 @@ export default {
       roomStatus: []
     };
   },
-
+    created() {
+    if (!checkAuth(this.$router)) return;
+  },
   computed: {
     paginatedRooms() {
       const start = this.currentPage * this.roomsPerPage;

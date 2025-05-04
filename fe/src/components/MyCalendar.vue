@@ -190,6 +190,7 @@
 <script>
 import AppSidebar from './AppSidebar.vue'
 import axios from 'axios'
+import { checkAuth } from '@/utils/auth';
 
 export default {
   name: 'MyCalendar',
@@ -422,6 +423,7 @@ export default {
     }
   },
   created() {
+    if (!checkAuth(this.$router)) return;
     this.fetchCalendar();
   }
 }

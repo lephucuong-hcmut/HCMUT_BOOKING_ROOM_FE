@@ -87,7 +87,7 @@ export default {
   methods: {
     handleSignOut() {
       localStorage.removeItem('userEmail');
-      this.$router.push('/');
+      this.$router.push('/signin');
     }
   }
 }

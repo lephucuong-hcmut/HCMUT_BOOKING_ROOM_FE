@@ -253,6 +253,7 @@
 <script>
 import AppSidebar from './AppSidebar.vue'
 import axios from 'axios'
+import { checkAuth } from '@/utils/auth';
 export default {
   name: 'SystemAdmin',
   components: {
@@ -424,6 +425,7 @@ export default {
     }
   },
   created() {
+    if (!checkAuth(this.$router)) return;
     this.fetchRooms();
     this.fetchUsers();
   }

@@ -6,7 +6,7 @@ import SystemAdmin from '../components/SystemAdmin.vue';
 import HomePage from '../components/HomePage.vue';
 import QrCheckin from '../components/QrCheckin.vue'
 const routes = [
-  { path: '/', component: SignIn, name: 'signin' }, // Đặt tên cho route
+  { path: '/signin', component: SignIn, name: 'signin' }, // Đặt tên cho route
   { path: '/signup', component: SignUp, name: 'signup' }, // Đặt tên cho route
   { path: '/forgot-password', component: () => import('../components/ForgotPassword.vue'), name: 'forgotPassword' },
   { path: '/reservation', component: ReservationBooking, name: 'reservation' },
