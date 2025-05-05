@@ -27,6 +27,8 @@ export default {
 <style scoped>
 .welcome-container {
   height: 100vh;
+  background-image: url('https://vcdn1-vnexpress.vnecdn.net/2025/02/26/hinh-truong-1740532182-1740532-9796-3852-1740532491.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=0-q6dSSpLQOSeY4cy_cRJg');
+
   background-size: cover;
   background-position: center;
   display: flex;
