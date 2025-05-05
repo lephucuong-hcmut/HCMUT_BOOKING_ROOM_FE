@@ -13,7 +13,9 @@ const routes = [
   { path: '/admin', component: SystemAdmin, name: 'admin' },
   { path: '/home', component: HomePage, name: 'home' },
   { path: '/calendar', component: () => import('../components/MyCalendar.vue'), name: 'calendar' },
-  { path: '/qr-checkin', component: QrCheckin, name: 'qr-checkin' }
+  { path: '/qr-checkin', component: QrCheckin, name: 'qr-checkin' },
+  { path: '/', component: () => import('../components/WelcomePage.vue'), name: 'welcome' },
+
 ];
 
 const router = createRouter({

@@ -128,7 +128,7 @@ export default {
         }
 
         alert("Đăng ký thành công!");
-        this.$router.push("/");
+        this.$router.push("/signin");
       } catch (error) {
         this.error = "Không thể kết nối đến server";
         console.error("Registration error:", error);
